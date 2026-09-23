@@ -1,4 +1,4 @@
-package kafka;
+package net.javaguides.orderservice.kafka;
 
 import net.javaguides.basedomains.dto.OrderEvent;
 import org.apache.kafka.clients.admin.NewTopic;
@@ -24,7 +24,7 @@ public class OrderProducer {
     }
 
     public void sendMessage(OrderEvent event){
-        LOGGER.info("Order event => %s", event.toString());
+        LOGGER.info("Order event => {}", event);
 
         // create message to send to Kafka topic
         Message<OrderEvent> message = MessageBuilder

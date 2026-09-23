@@ -1,4 +1,4 @@
-package config;
+package net.javaguides.orderservice.config;
 
 
 import org.apache.kafka.clients.admin.NewTopic;
